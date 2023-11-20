@@ -1,4 +1,4 @@
-// log in code here
+// login in code here
 
 function login(event) {
   document.getElementById("id01").style.display = "block";
@@ -13,77 +13,8 @@ window.addEventListener('click',function(event){
 
 
 })
-
-
-
-
-
-
-// sign up code here
-function Signup() {
-  document.getElementById("id02").style.display = "block";
-}
-
-// Get the modal1
-
-let modal1 = document.getElementById("id02");
-// window.onclick = function (event) {
-//   if (event.target == modal1) {
-//     modal1.style.display = "none";
-//   }
-// };
-
-window.addEventListener('click',function(event){
-  if (event.target == modal1) {
-    modal1.style.display = "none";
-  }
-
-
-})
- 
-
-// sign up code ends here
-
-
-// pizza page jump  code
- let pizza=document.querySelectorAll('#pizza')
-pizza.forEach(function(e){
   
-  e.addEventListener('click' ,function(){
-    // window.location.pathname =
-    // "./add to cart/pizza_addtocart.html";
-
-    window.location.href='http://127.0.0.1:5500/add%20to%20cart/pizza_addtocart.html';
-      
- 
-  })
-})
- let biryani=document.querySelectorAll('#biryani')
-biryani.forEach(function(e){
-  
-  e.addEventListener('click' ,function(){
-    window.location.pathname =
-    "./add to cart/Biryani.html";
-    // window.location.href='http://127.0.0.1:5501/add%20to%20cart/Biryani.html'
-   
-  })
-})
- let burger=document.querySelectorAll('#Burger')
-burger.forEach(function(e){
-  
-  e.addEventListener('click' ,function(){
-    window.location.pathname =
-    "./add to cart/Burger.html";
-    // window.location.href='http://127.0.0.1:5501/add%20to%20cart/Burger.html'
-    
-  
-  })
-})
-
-
-
-
-// validation cheack
+//  login validation cheack
 
 function cheack() {
     // Get the value of the input field with id="numb"
@@ -114,9 +45,8 @@ function cheack() {
     }
     else{
       confirm(" Login is succesfull Click the ok button");
-      window.location.pathname =
-       "./website/afterlogin.html";
-      // window.location.href='http://127.0.0.1:5500/afterlogin.html'
+      window.location.assign('http://127.0.0.1:5501/afterlogin.html')
+      
      
     }
     return false;
@@ -128,9 +58,9 @@ function cheack() {
     if (true) {
      
       alert(" sign up is succesfull ");
-      window.location.pathname =
-      "./website/afterlogin.html";
-      // window.location.href='http://127.0.0.1:5501/afterlogin.html'
+      
+    
+      window.location.assign('http://127.0.0.1:5501/afterlogin.html')
      
      
     }
@@ -147,6 +77,73 @@ function cheack() {
       alert('please Log in & Sign up first and explor more item')
     })
   });
+
+
+
+
+
+
+// sign up code here
+function Signup() {
+  document.getElementById("id02").style.display = "block";
+}
+
+
+
+let modal1 = document.getElementById("id02");
+// window.onclick = function (event) {
+//   if (event.target == modal1) {
+//     modal1.style.display = "none";
+//   }
+// };
+
+window.addEventListener('click',function(event){
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+
+
+})
+ 
+
+// sign up code ends here
+
+
+// pizza page jump  code
+ let pizza=document.querySelectorAll('#pizza')
+pizza.forEach(function(e){
+  
+  e.addEventListener('click' ,function(){
+    
+    window.location.assign('http://127.0.0.1:5501/pizza_addtocart.html')
+    
+      
+ 
+  })
+})
+ let biryani=document.querySelectorAll('#biryani')
+biryani.forEach(function(e){
+  
+  e.addEventListener('click' ,function(){
+    window.location.assign('http://127.0.0.1:5501/Biryani.html')
+   
+  })
+})
+ let burger=document.querySelectorAll('#Burger')
+burger.forEach(function(e){
+  
+  e.addEventListener('click' ,function(){
+   
+    window.location.assign('http://127.0.0.1:5501/Burger.html')
+    
+  
+  })
+})
+
+
+
+
+
 
 // order submit logic
 
